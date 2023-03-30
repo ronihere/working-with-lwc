@@ -7,6 +7,8 @@
 
 // System.debug(AccountController.getAccounts());
 
-Set<Id> caseIdSet = new Set<Id>();
-caseIdSet.add('5002w00000hF1KlAAK');
-CaseService.closeCases(caseIdSet,'ppy');
+String a = 'jello';
+String b = 'mello';
+System.debug(a+' '+b);
+a=b;
+System.debug(a+' '+b);
