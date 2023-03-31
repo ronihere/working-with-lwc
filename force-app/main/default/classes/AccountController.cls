@@ -1,13 +1,13 @@
 public with sharing class AccountController {
-   @AuraEnabled(cacheable=true)
-    public static List<Account> getAccounts() {
-        System.debug('hi');
-        return [
-            SELECT Name, AnnualRevenue, Industry
-            FROM Account
-            WITH SECURITY_ENFORCED
-            ORDER BY Name
-        ];
-        // throw new AuraHandledException('Forced error');
-    }
+  @AuraEnabled(cacheable=true)
+  public static List<Account> getAccounts() {
+    System.debug('hi feature-debug branch');
+    return [
+      SELECT Name, AnnualRevenue, Industry
+      FROM Account
+      WITH SECURITY_ENFORCED
+      ORDER BY Name
+    ];
+    // throw new AuraHandledException('Forced error');
+  }
 }
