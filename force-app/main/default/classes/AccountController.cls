@@ -3,6 +3,7 @@ public with sharing class AccountController {
   public static List<Account> getAccounts() {
     System.debug('hi feature-debug branch checking diff');
     //hey bro
+    //main bro
     return [
       SELECT Name, AnnualRevenue, Industry
       FROM Account
