@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Related Contacts">
+        <lightning-button label={buttonLabel} onclick={handleClick}></lightning-button>
+        <template if:true={showContacts}>
+            <lightning-input type="text" label="Search contacts" onchange={searchedContacts} value={searchKey}>
+            </lightning-input>
+            <lightning-card title="Datatable">
+                <lightning-datatable data={data} key-field="id" columns={columns}>
+                </lightning-datatable>
+            </lightning-card>
+        </template>
+    </lightning-card>
+</template>
